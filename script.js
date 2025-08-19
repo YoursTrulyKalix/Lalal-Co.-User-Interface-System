@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('login-password').value;
         const users = getUsers();
         if (users[username] && users[username].password === password) {
-            alert('Login successful.');
-            // TODO: redirect to dashboard
+            // redirect to homepage without alert
+            window.location.href = 'homepage.html';
         } else {
             alert('Invalid username or password.');
         }
