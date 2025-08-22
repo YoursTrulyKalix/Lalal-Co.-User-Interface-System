@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/4.png" type="image/png">
+    <title>Lalal & Co.</title>
+</head>
+<body>
+    <div class="container">
+        <div id="loginBox" class="form-box active">
+            <a class="back" href="#"><i class='bx bx-undo'></i></a>
+        <div class="logo">
+            <img src="images/Group 21.png" alt="Logo">
+        </div>
+            <h1>LOGIN</h1>
+            <form id="loginForm" action="submit" method="post">
+                <input type="text" id="login-name" placeholder="Enter your Username" required>
+
+                <input type="password" id="login-password" placeholder="Enter your Password" required>
+
+                <button type="submit" class="enter">ENTER</button>
+                <h2 class="or"><span>OR</span></h2>
+                    <div class="social-icons">
+                        <a href="#" class="toggle-signup">SIGN UP</a>
+                        <a href="#"><i class='bx bxl-google'></i> LOG IN WITH GOOGLE</a>
+                        <a href="#"><i class='bx bxl-facebook-circle' ></i> LOG IN WITH FACEBOOK</a>
+                    </div>
+                </form>
+        </div>
+        
+        <div id="signupBox" class="form-box">
+            <a class="back" href="#"><i class='bx bx-undo'></i></a>
+            <div class="logo">
+                <img src="images/Group 21.png" alt="Logo">
+            </div>
+            <h1>SIGN UP</h1>
+            <form id="signupForm" action="submit" method="post">
+                <input type="email" id="email" placeholder="Enter an Email" required>
+                <input type="text" id="signup-name" placeholder="Enter a Username" required>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <input type="password" id="signup-password" placeholder="Enter a Password" required>
+
+                <button type="submit">ENTER</button>
+                <h2 class="or"><span>OR</span></h2>
+                <div class="social-icons">
+                    <a href="#" class="toggle-login">BACK TO LOGIN</a>
+                    <a href="#"><i class='bx bxl-google'></i> SIGN UP WITH GOOGLE</a>
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i> SIGN UP WITH FACEBOOK</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
